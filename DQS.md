@@ -23,11 +23,18 @@ What is uncool : the UI is bad. Bad bad.
 
 ## DQS : the tool
 #### Artifacts
-- Domain concept (===Entity in MDS, table)
 - Domain (===Attribute in MDS, column)
   - Domain values : list of correct / incorrect values (exact matching)
   - Reference data : external data references
-  - Rules : tests
+  - Domain Rules : tests (regex, logical expressions, matching values)
   - Termbased relations : transcoding (inexact matching)
 
+- Composite domain: (===Entity in MDS, table)
+  - An address is Street + Zip Code + Country (domains)
 
+#### First : Create the KB
+By **Domain Discovery** from SQL Server or an Excel file (2003 XLS on 64bit servers). You can also import DQS files.
+
+Then use **Domain Management** to edit and add things.
+
+Little trick: if you import domain values from Excel on the format Column1, Column2, Column3... then DQS will create the Column1 value and associate Column2 and Column3 as synonyms.

@@ -3,8 +3,8 @@
 
 Speakers :
 
-* Oliver Engels (https://twitter.com/oengels)
-* Tillman Eiterberg (https://twitter.com/_Tillman)
+* Oliver Engels [@oengels](https://twitter.com/oengels)
+* Tillman Eiterberg [@_Tillman](https://twitter.com/_Tillman)
 
 Agenda : 
 

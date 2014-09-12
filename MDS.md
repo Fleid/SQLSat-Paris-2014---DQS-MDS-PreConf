@@ -30,15 +30,15 @@ artifacts
 
 ## Interfaces  
 
-Web and Excel. **Web sucks**. Excel add-in is great. Only thing not available in Excel yet is Hierarchies management.
+Web UI and Excel. **Web UI sucks**. Excel add-in is great. Only thing not available in Excel yet is Hierarchies management.
 
 With the web interface you can't edit artifacts, you have to drop them and recreate them. In Excel you can... In Excel you can generate Domain based constraints (enforced lookups) on the fly, loaded from the actual field.
 
 ## Business Rules
 
-Data owners write rules in pseudo-natural language, applied to attribute members for validation.
+Data owners write rules in pseudo-natural language, applied to attribute members for validation. But is has to be done in the **Web UI** :/
 
-Domain based look-ups are not possible at the moment. We only work at the entity level.
+Domain based look-ups are not possible at the moment. **Rules can only work at the entity level (row level)**.
 
-Rules can trigger email notifications (web ui) and other work-flow options.
+**Rules can trigger** email notifications (Web UI) and other work-flow options (via Service Broker).
 

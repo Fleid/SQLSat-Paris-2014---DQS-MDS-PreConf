@@ -63,6 +63,17 @@ Using the **Excel MDS add-in**, you can access the matching policies. First enab
 - Define specific domains per language for text fields (UK, FR, DE...), use a conditional split to clean each subset on its own domain
 - Use a conditional split, after the "DQS Cleansing component" and on its additional meta-data output columns (status, confidence, reason), to drive the ETL process
 - Use the [Balanced Data Distributor](http://www.microsoft.com/en-us/download/details.aspx?id=4123) to parallelize the DQS cleansing when its recommended. Try [defining the default buffer size](https://connect.microsoft.com/SQLServer/feedback/details/713837/data-quality-services-dqs-cleansing-component-performance-too-slow) of the package to the capacity of the "DQS Cleansing component"
-- aa
+- Approach Matching parameters definition as a Machine Learning experiment
 
-aa
+#### Troubleshooting
+- Errors occur on SQL Server or .NET Framework updates
+  - If it happens, try updating the DQS database schema (dqsinstaller.exe -upgrade) or the SQLCR assemblys (sqlinstaller.exe -upgradedlls)
+- Bug in SQL Server 2014 ("edition not supported"), current but should be resolved soon
+- 3 different log files : Server, Client, Cleansing component. Multiple severities, activities... See debugging options in the Web UI control panel, but shouldn't be used (it works or not, don't try debugging).
+- DQS Tables
+  - A_Configuration
+  - V_A_REFERENCE_DATA_AUDIT : usage info
+  - A_REFERENCE_DATA_CACHE : can be deleted if necessary (stale)
+  - A_KNOWLEDGEBASE : general info
+- T-SQL [Maintenance script](http://social.technet.microsoft.com/wiki/contents/articles/14065.delete-dqs-projects-created-from-running-ssis-dqs-cleansing-activities.aspx) to clean DQ project automatically created by the SSIS component
+

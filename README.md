@@ -11,4 +11,5 @@ Agenda :
 1. [Data Curation](https://github.com/Fleid/SQLSat-Paris-2014---DQS-MDS-PreConf/blob/master/DataCuration.md)
 2. [MDS : Master Data Management](https://github.com/Fleid/SQLSat-Paris-2014---DQS-MDS-PreConf/blob/master/MDS.md)
 3. [DQS : Data Quality Services](https://github.com/Fleid/SQLSat-Paris-2014---DQS-MDS-PreConf/blob/master/DQS.md)
-4. ...
+4. Overall integration
+

@@ -10,7 +10,8 @@ How to build a MDM solution **the right way** : vision > strategy > tactics > or
 Usual way to build a MDM solution : organisation & tools > failure
 
 ## Microsoft approach 
-> We are an open platform, do what you want with it
+> We are an open platform, do what you want with it.
+
 Generic tools, Framework, no vertical/domain solution, no further costs
 
 <img src="https://github.com/Fleid/SQLSat-Paris-2014---DQS-MDS-PreConf/blob/master/img/MDS1.JPG" width="600">

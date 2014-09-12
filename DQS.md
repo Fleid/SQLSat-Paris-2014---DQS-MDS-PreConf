@@ -62,4 +62,5 @@ Using the **Excel MDS add-in**, you can access the matching policies. First enab
   - Look for the 80/20 sweet spot: 80% of incoming values should hit the 20% of values that are always the same, and that should be defined as exact matching
 - Define specific domains per language for text fields (UK, FR, DE...), use a conditional split to clean each subset on its own domain
 - Use a conditional split, after the "DQS Cleansing component" and on its additional meta-data output columns (status, confidence, reason), to drive the ETL process
-- Use the [Balanced Data Distributor](http://www.microsoft.com/en-us/download/details.aspx?id=4123) to parallelize the DQS cleansing when its recommended
+- Use the [Balanced Data Distributor](http://www.microsoft.com/en-us/download/details.aspx?id=4123) to parallelize the DQS cleansing when its recommended. Try [defining the default buffer size](https://connect.microsoft.com/SQLServer/feedback/details/713837/data-quality-services-dqs-cleansing-component-performance-too-slow) of the package to the capacity of the "DQS Cleansing component"
+- 

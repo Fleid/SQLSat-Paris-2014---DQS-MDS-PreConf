@@ -7,7 +7,7 @@ Features in the products are more or less mapped on these **roles**:
 - Data Steward (he is in charge of the quality, and good usage, of the data, where it is used)
 - IT-Professional (build systems that enable everything)
 
-Data curation is a **feedback loop**:
+Data Curation is a **feedback loop**:
 
 1. Knowledge worker does something with data
 2. A data analyst help defining what needs to be done

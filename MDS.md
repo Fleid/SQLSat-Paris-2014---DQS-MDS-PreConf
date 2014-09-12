@@ -23,8 +23,8 @@ artifacts
     - Attributes
     - Members
   - Hierarchies
-    - Derived (generated from an attribute, then live independently)
-	- Explicit
+    - Derived (generated from a domain-based attribute relationship)
+	- Explicit (everything required is in the same entity)
   - Collections
   - Versions
 
@@ -42,3 +42,23 @@ Domain based look-ups are not possible at the moment. **Rules can only work at t
 
 **Rules can trigger** email notifications (Web UI) and other work-flow options (via Service Broker).
 
+## Work-flows
+
+Only **simple approval work-flows** can be created (manually, with change tracking and email notifications). If more is needed, add external DLL via .NET, or do SharePoint integration (independently of MDS, just on XLSX files).
+
+## Security
+
+Integrated with Active Directory. Manage user permissions and assignments to specific functions, models and attributes **(column level)** and hierarchy levels or members **(row level)**. Everything is done in the Web UI.
+
+## Staging
+
+Each entity has a stage (tables). It's a generic architecture, managed in batches through views and PS.
+
+A flag is present in each staging table, that will drive the batch:
+- 0 : Optimistic Merge
+- 1 : Insert
+- 2 : Overwrite Merge
+- 3 : Delete
+- 4 : Purge
+- 5 : Delete Overwrite
+- 6 : Purge Overwrite

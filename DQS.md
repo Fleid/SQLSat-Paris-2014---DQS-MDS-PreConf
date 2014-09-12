@@ -52,7 +52,7 @@ Detection of redundant data, after cleaning, even using fuzzy algos. Done in DQS
 
 ## DQS industrialization 
 #### Automation
-Using **SSIS**, you can access and use KBs in the data flow (no matching yet) with the "DQS Cleansing component". 
+Using **SSIS**, you can access and use KBs in the data flow (no official matching, but see [CodePlex SSIS DQS Matching component](https://ssisdqsmatching.codeplex.com/)) with the "DQS Cleansing component". 
 
 Using the **Excel MDS add-in**, you can access the matching policies. First enable the integration to DQS in the **MDS** management Web UI .
 

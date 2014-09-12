@@ -38,3 +38,7 @@ By **Domain Discovery** from SQL Server or an Excel file (2003 XLS on 64bit serv
 Then use **Domain Management** to edit and add things.
 
 Little trick: if you import domain values from Excel on the format Column1, Column2, Column3... then DQS will create the Column1 value and associate Column2 and Column3 as synonyms.
+
+#### Second : Create a DQ Project
+The project will use the KB to actually clean data. It maps columns from the source data to domains and checks values.
+

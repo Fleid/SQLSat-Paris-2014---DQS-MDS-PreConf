@@ -8,6 +8,7 @@ Features in the products are more or less mapped on these roles:
 - IT-Professional (build systems that enable everything)
 
 Data curation is a feedback loop:
+
 1. Knowledge worker does something with data
 2. A data analyst help defining what needs to be done
 3. The developer build what is required

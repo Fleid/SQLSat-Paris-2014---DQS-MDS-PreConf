@@ -30,5 +30,6 @@ Generic tools, Framework, no vertical/domain solution, no further costs
 
 ## Interfaces  
 
-Web and Excel. Web sucks. Excel add-in is great. Only thing not available in Excel yet is Hierarchies management.
+Web and Excel. **Web sucks**. Excel add-in is great. Only thing not available in Excel yet is Hierarchies management.
+
 With the web interface you can't edit artifacts, you have to drop them and recreate them. In Excel you can... In Excel you can generate Domain based constraints (enforced lookups) on the fly, loaded from the actual field.

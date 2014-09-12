@@ -25,7 +25,7 @@ What is uncool : the UI is bad. Bad bad.
 #### Artifacts
 - Domain (===Attribute in MDS, column)
   - Domain values : list of correct / incorrect values (exact matching)
-  - Reference data : external data references
+  - Reference data : external data references (including web services)
   - Domain Rules : tests (regex, logical expressions, matching values)
   - Termbased relations : transcoding (inexact matching)
 
@@ -40,5 +40,7 @@ Then use **Domain Management** to edit and add things.
 Little trick: if you import domain values from Excel on the format Column1, Column2, Column3... then DQS will create the Column1 value and associate Column2 and Column3 as synonyms.
 
 #### Second : Create a DQ Project
-The project will use the KB to actually clean data. It maps columns from the source data to domains and checks values.
+The project will use the KB to actually clean data. It maps columns from the source data (a copy of it in DQS) to domains and checks values. Then you need to export the cleaned data in SQL Server, Excel or CSV files.
+
+
 

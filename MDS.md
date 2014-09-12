@@ -13,10 +13,10 @@ Usual way to build a MDM solution : organisation & tools > failure
 > We are an open platform, do what you want with it.
 
 Generic tools, Framework, no vertical/domain solution, no further costs
-
+artefacts
 <img src="https://github.com/Fleid/SQLSat-Paris-2014---DQS-MDS-PreConf/blob/master/img/MDS1.JPG" width="600">
 
-## MDS Artifacts
+## MDS Artefacts
 
 - Models
   - Entities
@@ -32,4 +32,4 @@ Generic tools, Framework, no vertical/domain solution, no further costs
 
 Web and Excel. **Web sucks**. Excel add-in is great. Only thing not available in Excel yet is Hierarchies management.
 
-With the web interface you can't edit artifacts, you have to drop them and recreate them. In Excel you can... In Excel you can generate Domain based constraints (enforced lookups) on the fly, loaded from the actual field.
+With the web interface you can't edit artefacts, you have to drop them and recreate them. In Excel you can... In Excel you can generate Domain based constraints (enforced lookups) on the fly, loaded from the actual field.

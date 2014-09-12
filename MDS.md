@@ -51,7 +51,7 @@ Only **simple approval work-flows** can be created (manually, with change tracki
 Integrated with Active Directory. Manage user permissions and assignments to specific functions, models and attributes **(column level)** and hierarchy levels or members **(row level)**. Everything is done in the Web UI.
 
 ## Import/Export
-### Staging
+#### Staging
 
 Each entity has a stage (SQL tables : stg.***.Leaf). It's a generic architecture, managed in batches through views and stored procedures.
 
@@ -67,10 +67,10 @@ A flag is present in each staging table, that will drive the batch, for each row
 
 Use SSIS to load the staging tables, and launch the required SP.
 
-### Deployment scenarios
+#### Deployment scenarios
 
 3 options : full model, model updates (new objects), partial model deployment (selected objects). Note that the .PKG file generated for deployment does not contain : user defined meta-data, file attributes and user/group permissions (that's ok, it's security related data that should be different in each environment)
 
-### Exporting data
+#### Exporting data
 
 You have to create a subscription view (Web UI) to expose data for each entity. Note that if the structure of the entity changes, you have to recreate the view.

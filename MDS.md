@@ -17,6 +17,7 @@ Generic tools, Framework, no vertical/domain solution, no further costs
 <img src="https://github.com/Fleid/SQLSat-Paris-2014---DQS-MDS-PreConf/blob/master/img/MDS1.JPG" width="600">
 
 ## MDS Artifacts
+
 - Models
   - Entities
     - Attributes
@@ -26,3 +27,7 @@ Generic tools, Framework, no vertical/domain solution, no further costs
 	- Explicit
   - Collections
   - Versions
+
+## Interfaces  
+
+Web and Excel. Web sucks. Excel add-in is great. Only thing not available in Excel yet is Hierarchies management.

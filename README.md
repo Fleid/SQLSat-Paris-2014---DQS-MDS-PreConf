@@ -13,4 +13,5 @@ Agenda :
 3. [DQS : Data Quality Services](https://github.com/Fleid/SQLSat-Paris-2014---DQS-MDS-PreConf/blob/master/DQS.md)
 4. DQS Extension
   - [SSIS DQS Matching component](https://ssisdqsmatching.codeplex.com/)
-  - [SSIS DQS Domain Value import](https://domainvalueimport.codeplex.com/)
+  - [SSIS DQS Domain Value import](https://domainvalueimport.codeplex.com/) : allows to close the data curation loop, once your data is cleaned by similarity or low level rules, you can import back exact values in DQS
+  - [Tutorial](http://www.microsoft.com/en-us/download/details.aspx?id=35462) to build a closed EIM loop by Microsoft

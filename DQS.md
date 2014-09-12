@@ -56,7 +56,7 @@ Using **SSIS**, you can access and use KBs in the data flow (no matching yet) wi
 
 Using the **Excel MDS add-in**, you can access the matching policies. First enable the integration to DQS in the **MDS** management Web UI .
 
-### Best Practices
+#### Best Practices
 - Knowledge discovery in // using the trick in creating the KB
 - Exact matching >>> Similarity matching (performance wise), for every functions
   - Look for the 80/20 sweet spot: 80% of incoming values should hit the 20% of values that are always the same, and that should be defined as exact matching

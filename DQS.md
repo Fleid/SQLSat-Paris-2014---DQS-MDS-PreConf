@@ -14,7 +14,7 @@ VS
 #### Microsoft approach
 - Cleansing : amend, remove or enrich data
 - Matching : identify, link and merge related entries
-- Profiling : analyse, identify issue (not really good in DQS)
+- Profiling : analyze, identify issue (not really good in DQS)
 - Monitoring : track and monitor (not really good in DQS)
 
 What is cool : DQS is a Knowledge-Driven data quality solution. Let the business build a knowledge base, use that to check data quality.
@@ -23,10 +23,11 @@ What is uncool : the UI is bad. Bad bad.
 
 ## DQS : the tool
 #### Artifacts
-- Domain concept (===Entity in MDS)
-- Domain (===Attribute in MDS)
-  - Domain values : list of correct / incorrect values
-  - Reference data : external data
+- Domain concept (===Entity in MDS, table)
+- Domain (===Attribute in MDS, column)
+  - Domain values : list of correct / incorrect values (exact matching)
+  - Reference data : external data references
   - Rules : tests
-  - Termbased relations : 
+  - Termbased relations : transcoding (inexact matching)
+
 

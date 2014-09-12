@@ -19,8 +19,8 @@ Generic tools, Framework, no vertical/domain solution, no further costs
 ## MDS Artifacts
 - Models
   - Entities
-  - Attributes
-  - Members
+    - Attributes
+    - Members
   - Hierarchies
     - Derived
 	- Explicit

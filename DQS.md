@@ -21,6 +21,8 @@ What is cool : DQS is a Knowledge-Driven data quality solution. Let the business
 
 What is uncool : the UI is bad. Bad bad.
 
+NB : only one instance of DQS per server, on the default instance;
+
 ## DQS : the tool
 #### Artifacts
 - Domain (===Attribute in MDS, column)
@@ -46,6 +48,8 @@ The project will use the KB to actually clean data. It maps columns from the sou
 Cool stuff : **domain parsing** with composing domain, splits a single column (domain) to multiple domains in the same composing domain
 
 #### Third step : Matching
-Detection of redundant data, after cleaning, even using fuzzy algos. Done in DQS using **matching policies** in the KB.
+Detection of redundant data, after cleaning, even using fuzzy algos. Done in DQS using **matching policies** in the KB. Quite powerful but you have to determine your parameters manually :/
 
 ## DQS automation
+Using **SSIS**, you can access and use KBs in the data flow (no matching yet) with the "DQS Cleansing component". Using the **Excel MDS add-in**, you can access the matching policies.
+

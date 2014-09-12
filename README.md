@@ -6,5 +6,5 @@ Speakers :
 * Tillman Eiterberg (https://twitter.com/_Tillman)
 
 Agenda : 
-* Data Curation
-* ...
+1. Data Curation
+2. ...

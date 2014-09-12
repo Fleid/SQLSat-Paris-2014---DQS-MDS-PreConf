@@ -50,6 +50,15 @@ Cool stuff : **domain parsing** with composing domain, splits a single column (d
 #### Third step : Matching
 Detection of redundant data, after cleaning, even using fuzzy algos. Done in DQS using **matching policies** in the KB. Quite powerful but you have to determine your parameters manually :/
 
-## DQS automation
-Using **SSIS**, you can access and use KBs in the data flow (no matching yet) with the "DQS Cleansing component". Using the **Excel MDS add-in**, you can access the matching policies.
+## DQS industrialization 
+#### Automation
+Using **SSIS**, you can access and use KBs in the data flow (no matching yet) with the "DQS Cleansing component". 
 
+Using the **Excel MDS add-in**, you can access the matching policies. First enable the integration to DQS in the **MDS** management Web UI .
+
+### Best Practices
+- Knowledge discovery in // using the trick in creating the KB
+- Exact matching >>> Similarity matching (performance wise), for every functions
+  - Look for the 80/20 sweet spot: 80% of incoming values should hit the 20% of values that are always the same, and that should be defined as exact matching
+- Define specific domains per language for text fields (UK, FR, DE...), use a conditional split to clean each subset on its own domain
+- Use a conditional split, after the "DQS Cleansing component" and on its additional meta-data output columns (status, confidence, reason), to drive the ETL process
